@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <style></style>
+
   <body>
     <h1>Study Web Page by Piso</h1>
     <section>
@@ -16,6 +16,7 @@
         <li class="checklist">
           <div>useState<input type="checkbox" /></div>
           <div>react 예제 1개 - stopwatch<input type="checkbox" /></div>
+          <p>마무리 못한 것들 - Reset 버튼, 리팩토링 요망</p>
         </li>
       </ul>
     </section>
@@ -28,5 +29,12 @@
         <li>point 12 - point 22<input type="checkbox" /></li>
       </ul>
     </section>
+    <script>
+      document.body.addEventListener("input", (e) => {
+        console.log(
+          (e.target.parentNode.style.textDecoration = "line-through")
+        );
+      });
+    </script>
   </body>
 </html>
